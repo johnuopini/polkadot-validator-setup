@@ -80,7 +80,7 @@ ExecStart=/usr/local/bin/polkadot \
   --validator \
 {% endif %}
   --chain={{ chain }} \
-  --listen-addr=/ip4/127.0.0.1/tcp/{{ p2p_port }} \
+  --port {{ p2p_port }} \
   --rpc-methods=Unsafe \
 {% if relay_flag is not none and relay_flag|length %}
   -- \
