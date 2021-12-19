@@ -83,8 +83,7 @@ ExecStart=/usr/local/bin/polkadot \
   --port {{ p2p_port }} \
   --rpc-methods=Unsafe \
 {% if relay_flag is not none and relay_flag|length %}
-  -- \
-  {{ relay_flag }} \
+  -- {{ relay_flag }} \
 {% if relay_name is not none and relay_name|length %}
   --name={{ relay_name }}
 {% endif %}
