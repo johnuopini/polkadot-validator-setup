@@ -101,7 +101,7 @@ A possibile configuration can be:
 ```json
 ...
 "validators": {
-    "additionalFlags": "--unsafe-pruning --pruning 1000",
+    "additionalFlags": "--pruning 1000",
     "dbSnapshot": {
       "url": "https://ksm-rocksdb.polkashots.io/kusama-6658753.RocksDb.7z",
       "checksum": "sha256:4f61a99e4b00acb335aff52f2383880d53b30617c0ae67ac47c611e7bf6971ff"
